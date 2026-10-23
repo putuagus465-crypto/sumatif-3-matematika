@@ -9,31 +9,24 @@ const SVG_ICONS = {
       <text x="310" y="24" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Tangga Satuan Baku Panjang (km s.d. mm)</text>
       
       <!-- Anak Tangga km -> mm -->
-      <!-- km -->
       <rect x="25" y="40" width="55" height="26" rx="5" fill="#3b82f6"/>
       <text x="52.5" y="58" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">km</text>
       
-      <!-- hm -->
       <rect x="75" y="62" width="55" height="26" rx="5" fill="#2563eb"/>
       <text x="102.5" y="80" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">hm</text>
       
-      <!-- dam -->
       <rect x="125" y="84" width="55" height="26" rx="5" fill="#1d4ed8"/>
       <text x="152.5" y="102" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">dam</text>
       
-      <!-- m (highlighted) -->
       <rect x="175" y="106" width="60" height="28" rx="6" fill="#10b981" stroke="#047857" stroke-width="2"/>
       <text x="205" y="125" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">m</text>
       
-      <!-- dm -->
       <rect x="230" y="130" width="55" height="26" rx="5" fill="#0284c7"/>
       <text x="257.5" y="148" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">dm</text>
       
-      <!-- cm (highlighted) -->
       <rect x="280" y="152" width="60" height="28" rx="6" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
       <text x="310" y="171" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">cm</text>
       
-      <!-- mm -->
       <rect x="335" y="174" width="55" height="26" rx="5" fill="#64748b"/>
       <text x="362.5" y="192" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">mm</text>
       
@@ -117,95 +110,185 @@ const SVG_ICONS = {
       <rect width="600" height="170" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
       <text x="300" y="24" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Pengukuran Panjang Pensil Menggunakan Penggaris</text>
       
-      <!-- Pensil -->
-      <!-- Ujung pensil mulai dari x=60 (0 cm) sampai x=420 (12 cm) -> panjang 360 px = 12 cm (30 px per cm) -->
       <g transform="translate(60, 42)">
-        <!-- Batang pensil -->
         <rect x="0" y="10" width="320" height="22" fill="#f59e0b" stroke="#b45309" stroke-width="1"/>
         <line x1="0" y1="17" x2="320" y2="17" stroke="#fbbf24" stroke-width="2"/>
         <line x1="0" y1="25" x2="320" y2="25" stroke="#d97706" stroke-width="1.5"/>
-        <!-- Ujung kayu lancip pensil -->
         <polygon points="320,10 360,21 320,32" fill="#fed7aa" stroke="#ca8a04" stroke-width="1"/>
-        <!-- Mata pensil grafit hitam -->
         <polygon points="350,18.5 360,21 350,23.5" fill="#1e293b"/>
-        <!-- Penghapus di pangkal -->
         <rect x="-16" y="10" width="16" height="22" rx="3" fill="#f43f5e"/>
         <rect x="-4" y="9" width="6" height="24" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1"/>
       </g>
 
-      <!-- Garis bantu ukur -->
       <line x1="60" y1="36" x2="60" y2="82" stroke="#2563eb" stroke-dasharray="3,3" stroke-width="1.5"/>
       <line x1="420" y1="36" x2="420" y2="82" stroke="#dc2626" stroke-dasharray="3,3" stroke-width="1.5"/>
       <text x="60" y="80" font-family="sans-serif" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle">Pangkal = 0 cm</text>
       <text x="420" y="80" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">Ujung = 12 cm</text>
 
-      <!-- Penggaris mistar transparan / kuning lembut -->
       <rect x="40" y="90" width="520" height="60" rx="6" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
       
-      <!-- Garis skala penggaris (30 px per cm, mulai x=60 = 0 cm s.d. x=510 = 15 cm) -->
-      <!-- Skala angka 0 s.d. 15 -->
-      <!-- 0 cm -->
       <line x1="60" y1="90" x2="60" y2="114" stroke="#854d0e" stroke-width="2.5"/>
       <text x="60" y="132" font-family="sans-serif" font-size="12" font-weight="bold" fill="#854d0e" text-anchor="middle">0</text>
-
-      <!-- 1 cm -->
       <line x1="90" y1="90" x2="90" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="90" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">1</text>
-
-      <!-- 2 cm -->
       <line x1="120" y1="90" x2="120" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="120" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">2</text>
-
-      <!-- 3 cm -->
       <line x1="150" y1="90" x2="150" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="150" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">3</text>
-
-      <!-- 4 cm -->
       <line x1="180" y1="90" x2="180" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="180" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">4</text>
-
-      <!-- 5 cm -->
       <line x1="210" y1="90" x2="210" y2="114" stroke="#854d0e" stroke-width="2"/>
       <text x="210" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">5</text>
-
-      <!-- 6 cm -->
       <line x1="240" y1="90" x2="240" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="240" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">6</text>
-
-      <!-- 7 cm -->
       <line x1="270" y1="90" x2="270" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="270" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">7</text>
-
-      <!-- 8 cm -->
       <line x1="300" y1="90" x2="300" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="300" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">8</text>
-
-      <!-- 9 cm -->
       <line x1="330" y1="90" x2="330" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="330" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">9</text>
-
-      <!-- 10 cm -->
       <line x1="360" y1="90" x2="360" y2="114" stroke="#854d0e" stroke-width="2"/>
       <text x="360" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">10</text>
-
-      <!-- 11 cm -->
       <line x1="390" y1="90" x2="390" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="390" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">11</text>
-
-      <!-- 12 cm (highlighted target) -->
       <line x1="420" y1="90" x2="420" y2="116" stroke="#b91c1c" stroke-width="3"/>
       <text x="420" y="133" font-family="sans-serif" font-size="12" font-weight="extrabold" fill="#b91c1c" text-anchor="middle">12</text>
-
-      <!-- 13 cm -->
       <line x1="450" y1="90" x2="450" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="450" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">13</text>
-
-      <!-- 14 cm -->
       <line x1="480" y1="90" x2="480" y2="112" stroke="#854d0e" stroke-width="1.5"/>
       <text x="480" y="132" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">14</text>
-
-      <!-- Satuan cm -->
       <text x="530" y="125" font-family="sans-serif" font-size="12" font-weight="bold" fill="#854d0e">cm</text>
+    </svg>
+  `)}`,
+
+  // Ilustrasi Posisi Mata yang Benar saat Membaca Mistar
+  posisiMataUkur: `data:image/svg+xml;utf8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+      <rect width="600" height="200" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="300" y="24" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Posisi Mata Saat Membaca Skala Penggaris</text>
+      
+      <!-- Penggaris di bagian bawah -->
+      <g transform="translate(100, 130)">
+        <rect width="400" height="40" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+        <line x1="50" y1="0" x2="50" y2="15" stroke="#854d0e" stroke-width="2"/>
+        <text x="50" y="30" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">4</text>
+        
+        <line x1="125" y1="0" x2="125" y2="18" stroke="#854d0e" stroke-width="2"/>
+        <text x="125" y="30" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">5</text>
+        
+        <!-- Titik ukur 6 cm yang ditargetkan -->
+        <line x1="200" y1="0" x2="200" y2="24" stroke="#dc2626" stroke-width="3"/>
+        <text x="200" y="32" font-family="sans-serif" font-size="13" font-weight="extrabold" fill="#dc2626" text-anchor="middle">6</text>
+        
+        <line x1="275" y1="0" x2="275" y2="18" stroke="#854d0e" stroke-width="2"/>
+        <text x="275" y="30" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">7</text>
+        
+        <line x1="350" y1="0" x2="350" y2="15" stroke="#854d0e" stroke-width="2"/>
+        <text x="350" y="30" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e" text-anchor="middle">8</text>
+      </g>
+      
+      <!-- Posisi A (Miring Kiri - SALAH) -->
+      <g transform="translate(170, 40)">
+        <text x="0" y="20" font-family="sans-serif" font-size="24">👁️</text>
+        <line x1="15" y1="28" x2="130" y2="90" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,3"/>
+        <rect x="-35" y="36" width="95" height="20" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
+        <text x="12" y="50" font-family="sans-serif" font-size="9" font-weight="bold" fill="#991b1b" text-anchor="middle">A (Miring - SALAH)</text>
+      </g>
+      
+      <!-- Posisi B (Tegak Lurus - BENAR) -->
+      <g transform="translate(300, 35)">
+        <text x="0" y="20" font-family="sans-serif" font-size="28" text-anchor="middle">👁️</text>
+        <line x1="0" y1="28" x2="0" y2="95" stroke="#16a34a" stroke-width="3"/>
+        <polygon points="0,95 -5,85 5,85" fill="#16a34a"/>
+        <rect x="-70" y="36" width="140" height="22" rx="5" fill="#dcfce7" stroke="#86efac"/>
+        <text x="0" y="51" font-family="sans-serif" font-size="10" font-weight="extrabold" fill="#15803d" text-anchor="middle">B (TEGAK LURUS - BENAR)</text>
+      </g>
+      
+      <!-- Posisi C (Miring Kanan - SALAH) -->
+      <g transform="translate(430, 40)">
+        <text x="0" y="20" font-family="sans-serif" font-size="24">👁️</text>
+        <line x1="15" y1="28" x2="-130" y2="90" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,3"/>
+        <rect x="-35" y="36" width="95" height="20" rx="4" fill="#fee2e2" stroke="#fca5a5"/>
+        <text x="12" y="50" font-family="sans-serif" font-size="9" font-weight="bold" fill="#991b1b" text-anchor="middle">C (Miring - SALAH)</text>
+      </g>
+    </svg>
+  `)}`,
+
+  // Ilustrasi Jangka Sorong (Mengukur Koin Logam)
+  jangkaSorong: `data:image/svg+xml;utf8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="100%">
+      <rect width="540" height="180" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="270" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Jangka Sorong (Sketmat) untuk Benda Kecil dan Bundar</text>
+      
+      <!-- Batang Utama Jangka Sorong -->
+      <g transform="translate(40, 50)">
+        <rect x="0" y="10" width="460" height="30" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+        <line x1="0" y1="20" x2="460" y2="20" stroke="#94a3b8"/>
+        
+        <!-- Rahang Tetap Kiri -->
+        <path d="M 0 10 L 0 95 L 25 80 L 25 40 L 0 40 Z" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        
+        <!-- Rahang Geser Kanan -->
+        <g transform="translate(90, 0)">
+          <path d="M 0 10 L 0 40 L -25 40 L -25 80 L 0 95 L 35 95 L 35 10 Z" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5"/>
+          <text x="17" y="65" font-family="sans-serif" font-size="8" font-weight="bold" fill="#1e40af" text-anchor="middle">Rahang</text>
+          <text x="17" y="75" font-family="sans-serif" font-size="8" font-weight="bold" fill="#1e40af" text-anchor="middle">Geser</text>
+        </g>
+        
+        <!-- Koin Logam yang Dijepit di antara Dua Rahang (x=25 s.d. x=65 -> diameter 40px) -->
+        <ellipse cx="45" cy="65" rx="18" ry="18" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+        <text x="45" y="69" font-family="sans-serif" font-size="9" font-weight="bold" fill="#78350f" text-anchor="middle">KOIN</text>
+      </g>
+      
+      <!-- Keterangan Fungsi Jangka Sorong -->
+      <g transform="translate(200, 105)">
+        <rect width="300" height="55" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+        <text x="15" y="22" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#1d4ed8">• Mengukur tebal uang koin logam &amp; tutup botol</text>
+        <text x="15" y="40" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#1d4ed8">• Mengukur diameter kelereng / pipa kecil</text>
+      </g>
+    </svg>
+  `)}`,
+
+  // Ilustrasi Penggaris Patah (Mulai dari 3 cm s.d. 8 cm)
+  penggarisTidakNol: `data:image/svg+xml;utf8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 170" width="100%" height="100%">
+      <rect width="540" height="170" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="270" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Pengukuran Benda yang Tidak Dimulai dari Angka Nol (0)</text>
+      
+      <!-- Benda: Penghapus Karet mulai dari x=160 (3 cm) sampai x=360 (8 cm) -->
+      <g transform="translate(160, 40)">
+        <rect width="200" height="30" rx="6" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+        <text x="100" y="20" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Penghapus Karet</text>
+      </g>
+      
+      <!-- Garis Bantu Pangkal & Ujung -->
+      <line x1="160" y1="36" x2="160" y2="85" stroke="#2563eb" stroke-dasharray="3,3" stroke-width="2"/>
+      <line x1="360" y1="36" x2="360" y2="85" stroke="#dc2626" stroke-dasharray="3,3" stroke-width="2"/>
+      <text x="160" y="34" font-family="sans-serif" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle">Pangkal = 3 cm</text>
+      <text x="360" y="34" font-family="sans-serif" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">Ujung = 8 cm</text>
+      
+      <!-- Penggaris Mistar (40 px per cm, mulai x=40 = 0 cm s.d. x=480 = 11 cm) -->
+      <g transform="translate(40, 90)">
+        <rect width="460" height="55" rx="5" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+        
+        <!-- 0 s.d. 10 cm -->
+        <line x1="40" y1="0" x2="40" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="40" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">1</text>
+        <line x1="80" y1="0" x2="80" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="80" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">2</text>
+        
+        <!-- 3 cm (Pangkal) -->
+        <line x1="120" y1="0" x2="120" y2="20" stroke="#2563eb" stroke-width="3"/><text x="120" y="32" font-family="sans-serif" font-size="12" font-weight="extrabold" fill="#2563eb" text-anchor="middle">3</text>
+        <line x1="160" y1="0" x2="160" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="160" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">4</text>
+        <line x1="200" y1="0" x2="200" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="200" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">5</text>
+        <line x1="240" y1="0" x2="240" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="240" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">6</text>
+        <line x1="280" y1="0" x2="280" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="280" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">7</text>
+        
+        <!-- 8 cm (Ujung) -->
+        <line x1="320" y1="0" x2="320" y2="20" stroke="#dc2626" stroke-width="3"/><text x="320" y="32" font-family="sans-serif" font-size="12" font-weight="extrabold" fill="#dc2626" text-anchor="middle">8</text>
+        <line x1="360" y1="0" x2="360" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="360" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">9</text>
+        <line x1="400" y1="0" x2="400" y2="14" stroke="#854d0e" stroke-width="1.5"/><text x="400" y="30" font-family="sans-serif" font-size="10" fill="#854d0e" text-anchor="middle">10</text>
+        
+        <text x="435" y="32" font-family="sans-serif" font-size="11" font-weight="bold" fill="#854d0e">cm</text>
+      </g>
     </svg>
   `)}`,
 
@@ -215,35 +298,27 @@ const SVG_ICONS = {
       <rect width="620" height="220" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
       <text x="310" y="24" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Tangga Satuan Baku Berat (Massa: kg, ons, gram)</text>
       
-      <!-- kg -->
       <rect x="25" y="40" width="60" height="28" rx="6" fill="#10b981" stroke="#047857" stroke-width="2"/>
       <text x="55" y="59" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">kg</text>
       
-      <!-- hg / ons -->
       <rect x="80" y="66" width="65" height="28" rx="6" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
       <text x="112.5" y="85" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">hg (ons)</text>
       
-      <!-- dag -->
       <rect x="140" y="90" width="55" height="26" rx="5" fill="#0284c7"/>
       <text x="167.5" y="108" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">dag</text>
       
-      <!-- g (gram) -->
       <rect x="195" y="114" width="60" height="28" rx="6" fill="#3b82f6" stroke="#1d4ed8" stroke-width="2"/>
       <text x="225" y="133" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">g (gram)</text>
       
-      <!-- dg -->
       <rect x="250" y="138" width="55" height="26" rx="5" fill="#64748b"/>
       <text x="277.5" y="156" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">dg</text>
       
-      <!-- cg -->
       <rect x="300" y="160" width="55" height="26" rx="5" fill="#64748b"/>
       <text x="327.5" y="178" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">cg</text>
       
-      <!-- mg -->
       <rect x="350" y="180" width="55" height="26" rx="5" fill="#475569"/>
       <text x="377.5" y="198" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">mg</text>
       
-      <!-- Kotak Kunci Konversi Satuan Berat -->
       <g transform="translate(415, 40)">
         <rect width="185" height="162" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
         <text x="92.5" y="22" font-family="sans-serif" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">Kunci Konversi Berat:</text>
@@ -317,18 +392,15 @@ const SVG_ICONS = {
     </svg>
   `)}`,
 
-  // Ilustrasi Timbangan Jarum Buah Apel (Tepat Menunjuk 2 kg)
+  // Ilustrasi Timbangan Jarum Buah Apel (2 kg)
   timbanganJarumBuah: `data:image/svg+xml;utf8,${encodeURIComponent(`
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 240" width="100%" height="100%">
       <rect width="500" height="240" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
       <text x="250" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Membaca Hasil Pengukuran pada Timbangan Jarum</text>
       
-      <!-- Piring Timbangan & Buah Apel -->
       <path d="M 160 50 L 340 50 L 320 65 L 180 65 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
-      <!-- Tiang penyangga piring -->
       <rect x="242" y="65" width="16" height="25" fill="#64748b"/>
       
-      <!-- Apel di atas piring timbangan -->
       <g transform="translate(190, 20)">
         <circle cx="25" cy="22" r="16" fill="#ef4444"/>
         <path d="M 25 6 Q 28 0 32 3" stroke="#15803d" stroke-width="2.5" fill="none"/>
@@ -338,31 +410,19 @@ const SVG_ICONS = {
         <circle cx="75" cy="10" r="14" fill="#dc2626"/>
       </g>
       
-      <!-- Badan Timbangan Bulat -->
       <rect x="180" y="85" width="140" height="135" rx="12" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
-      <!-- Dial Jam Timbangan Lingkaran -->
       <circle cx="250" cy="150" r="54" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
       
-      <!-- Angka-angka pada dial timbangan (0, 1, 2, 3, 4, 5 kg) -->
-      <!-- 0 / 5 kg di atas (12 o'clock) -->
       <text x="250" y="112" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">0 kg</text>
-      <!-- 1 kg (sekitar jam 2) -->
       <text x="288" y="132" font-family="sans-serif" font-size="10" font-weight="bold" fill="#334155" text-anchor="middle">1</text>
-      <!-- 2 kg (sekitar jam 4 - 5) -> DITUNJUK JARUM! -->
       <text x="284" y="178" font-family="sans-serif" font-size="12" font-weight="extrabold" fill="#b91c1c" text-anchor="middle">2 kg</text>
-      <!-- 3 kg (sekitar jam 7) -->
       <text x="216" y="178" font-family="sans-serif" font-size="10" font-weight="bold" fill="#334155" text-anchor="middle">3</text>
-      <!-- 4 kg (sekitar jam 10) -->
       <text x="212" y="132" font-family="sans-serif" font-size="10" font-weight="bold" fill="#334155" text-anchor="middle">4</text>
       
-      <!-- Titik tengah poros jarum -->
       <circle cx="250" cy="150" r="4" fill="#0f172a"/>
-      
-      <!-- Jarum Penunjuk Merah Mengarah TEPAT ke Angka 2 kg (arah kanan bawah, dx=28, dy=22) -->
       <line x1="250" y1="150" x2="280" y2="172" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
       <polygon points="280,172 272,166 276,160" fill="#dc2626"/>
       
-      <!-- Keterangan Banner Hasil -->
       <g transform="translate(350, 100)">
         <rect width="135" height="95" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
         <text x="67.5" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#991b1b" text-anchor="middle">Hasil Pembacaan:</text>
@@ -370,6 +430,144 @@ const SVG_ICONS = {
         <text x="67.5" y="48" font-family="sans-serif" font-size="14" font-weight="extrabold" fill="#dc2626" text-anchor="middle">2 kg</text>
         <text x="67.5" y="66" font-family="sans-serif" font-size="9" fill="#7f1d1d" text-anchor="middle">setara dengan</text>
         <text x="67.5" y="82" font-family="sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">2.000 gram</text>
+      </g>
+    </svg>
+  `)}`,
+
+  // Ilustrasi Timbangan Gantung Posyandu (Dacin)
+  timbanganDacinPosyandu: `data:image/svg+xml;utf8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" width="100%" height="100%">
+      <rect width="540" height="220" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="270" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Timbangan Dacin (Timbangan Gantung Balita di Posyandu)</text>
+      
+      <!-- Batang Gantung Utama dari langit-langit -->
+      <line x1="200" y1="28" x2="200" y2="60" stroke="#475569" stroke-width="3"/>
+      <circle cx="200" cy="60" r="6" fill="#0f172a"/>
+      
+      <!-- Lengan Logam Dacin (horizontal) -->
+      <line x1="80" y1="60" x2="420" y2="60" stroke="#ca8a04" stroke-width="6" stroke-linecap="round"/>
+      
+      <!-- Skala garis pada lengan dacin -->
+      <line x1="230" y1="57" x2="230" y2="63" stroke="#78350f" stroke-width="1.5"/>
+      <line x1="260" y1="57" x2="260" y2="63" stroke="#78350f" stroke-width="1.5"/>
+      <line x1="290" y1="57" x2="290" y2="63" stroke="#78350f" stroke-width="1.5"/>
+      <line x1="320" y1="57" x2="320" y2="63" stroke="#78350f" stroke-width="1.5"/>
+      <line x1="350" y1="57" x2="350" y2="63" stroke="#78350f" stroke-width="1.5"/>
+      <line x1="380" y1="57" x2="380" y2="63" stroke="#78350f" stroke-width="1.5"/>
+      
+      <!-- Bandul Geser Dacin di Lengan Kanan -->
+      <g transform="translate(320, 52)">
+        <rect width="24" height="34" rx="4" fill="#b45309" stroke="#78350f" stroke-width="1.5"/>
+        <text x="12" y="22" font-family="sans-serif" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">kg</text>
+      </g>
+      
+      <!-- Tali & Kain Ayunan Sarung Timbang Balita di Sisi Kiri -->
+      <line x1="110" y1="60" x2="90" y2="105" stroke="#0284c7" stroke-width="2"/>
+      <line x1="110" y1="60" x2="130" y2="105" stroke="#0284c7" stroke-width="2"/>
+      
+      <path d="M 75 105 Q 110 170 145 105 Z" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+      <circle cx="110" cy="118" r="14" fill="#fed7aa"/>
+      <text x="110" y="123" font-family="sans-serif" font-size="14" text-anchor="middle">👶</text>
+      
+      <!-- Kotak Keterangan Dacin Posyandu -->
+      <g transform="translate(230, 110)">
+        <rect width="280" height="90" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+        <text x="140" y="24" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Timbangan Dacin Posyandu</text>
+        <line x1="15" y1="32" x2="265" y2="32" stroke="#bfdbfe"/>
+        <text x="15" y="48" font-family="sans-serif" font-size="9.5" fill="#1e3a8a">• Digunakan untuk menimbang balita/bayi</text>
+        <text x="15" y="64" font-family="sans-serif" font-size="9.5" fill="#1e3a8a">• Bayi ditaruh di dalam sarung ayunan</text>
+        <text x="15" y="80" font-family="sans-serif" font-size="9.5" fill="#1e3a8a">• Berat dibaca dari posisi geseran bandul</text>
+      </g>
+    </svg>
+  `)}`,
+
+  // Ilustrasi Timbangan Bebek / Pasar dengan Anak Timbangan (1 kg + 500 g = 1.500 g)
+  timbanganPasarBebekAnak: `data:image/svg+xml;utf8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" width="100%" height="100%">
+      <rect width="540" height="220" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="270" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Timbangan Bebek (Timbangan Pasar) dalam Kondisi Seimbang</text>
+      
+      <!-- Badan Timbangan Logam Kuningan -->
+      <path d="M 210 170 L 330 170 L 310 195 L 230 195 Z" fill="#78350f" stroke="#451a03" stroke-width="2"/>
+      <rect x="260" y="100" width="20" height="70" fill="#b45309"/>
+      
+      <!-- Lengan Timbangan (Seimbang Horizontal) -->
+      <line x1="90" y1="105" x2="450" y2="105" stroke="#ca8a04" stroke-width="6" stroke-linecap="round"/>
+      
+      <!-- Jarum Indikator Seimbang (Dua Paruh Bebek Bertemu di Tengah) -->
+      <polygon points="270,95 264,105 276,105" fill="#dc2626"/>
+      <circle cx="270" cy="105" r="5" fill="#451a03"/>
+      <text x="270" y="88" font-family="sans-serif" font-size="9" font-weight="bold" fill="#dc2626" text-anchor="middle">SEIMBANG</text>
+      
+      <!-- Piringan Kiri: Buah Pepaya -->
+      <g transform="translate(60, 105)">
+        <line x1="70" y1="0" x2="70" y2="25" stroke="#854d0e" stroke-width="2"/>
+        <path d="M 25 25 L 115 25 Q 70 50 25 25 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+        <!-- Buah Pepaya -->
+        <ellipse cx="70" cy="15" rx="36" ry="18" fill="#f97316" stroke="#c2410c" stroke-width="1.5"/>
+        <text x="70" y="19" font-family="sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">Pepaya</text>
+      </g>
+      
+      <!-- Piringan Kanan: Anak Timbangan 1 kg + 500 g -->
+      <g transform="translate(340, 105)">
+        <line x1="70" y1="0" x2="70" y2="25" stroke="#854d0e" stroke-width="2"/>
+        <path d="M 25 25 L 115 25 Q 70 50 25 25 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+        
+        <!-- Anak Timbangan 1 kg -->
+        <g transform="translate(40, -5)">
+          <rect width="28" height="30" rx="3" fill="#ca8a04" stroke="#78350f" stroke-width="1.5"/>
+          <circle cx="14" cy="-3" r="4" fill="#a16207"/>
+          <text x="14" y="18" font-family="sans-serif" font-size="9" font-weight="extrabold" fill="#451a03" text-anchor="middle">1 kg</text>
+        </g>
+        
+        <!-- Anak Timbangan 500 g -->
+        <g transform="translate(74, 5)">
+          <rect width="24" height="20" rx="3" fill="#eab308" stroke="#a16207" stroke-width="1.5"/>
+          <circle cx="12" cy="-3" r="3" fill="#ca8a04"/>
+          <text x="12" y="13" font-family="sans-serif" font-size="8" font-weight="extrabold" fill="#451a03" text-anchor="middle">500g</text>
+        </g>
+      </g>
+    </svg>
+  `)}`,
+
+  // Ilustrasi Timbangan Kue Dapur Menunjuk Tepat 600 gram
+  timbanganKueJarumDetail: `data:image/svg+xml;utf8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 240" width="100%" height="100%">
+      <rect width="500" height="240" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="250" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Pengukuran Tepung Terigu pada Timbangan Dapur Jarum</text>
+      
+      <!-- Mangkuk Tepung -->
+      <path d="M 170 48 L 330 48 L 305 66 L 195 66 Z" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+      <ellipse cx="250" cy="48" rx="60" ry="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="250" y="52" font-family="sans-serif" font-size="10" font-weight="bold" fill="#0369a1" text-anchor="middle">Tepung Terigu</text>
+      <rect x="242" y="66" width="16" height="22" fill="#64748b"/>
+      
+      <!-- Badan Timbangan -->
+      <rect x="175" y="85" width="150" height="135" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+      <circle cx="250" cy="152" r="56" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+      
+      <!-- Titik Skala 0 s.d. 1.000 gram -->
+      <text x="250" y="112" font-family="sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">0 / 1 kg</text>
+      <text x="294" y="132" font-family="sans-serif" font-size="9" fill="#475569" text-anchor="middle">200g</text>
+      <text x="296" y="172" font-family="sans-serif" font-size="9" fill="#475569" text-anchor="middle">400g</text>
+      
+      <!-- Garis 600 gram DITUNJUK JARUM! -->
+      <text x="222" y="196" font-family="sans-serif" font-size="11" font-weight="extrabold" fill="#dc2626" text-anchor="middle">600g</text>
+      <text x="202" y="132" font-family="sans-serif" font-size="9" fill="#475569" text-anchor="middle">800g</text>
+      
+      <circle cx="250" cy="152" r="4" fill="#0f172a"/>
+      <!-- Jarum Penunjuk ke 600g (arah kiri bawah) -->
+      <line x1="250" y1="152" x2="228" y2="184" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+      <polygon points="228,184 233,176 223,176" fill="#dc2626"/>
+      
+      <!-- Keterangan Konversi -->
+      <g transform="translate(350, 95)">
+        <rect width="135" height="100" rx="8" fill="#fefce8" stroke="#fde047" stroke-width="1.5"/>
+        <text x="67.5" y="24" font-family="sans-serif" font-size="10" font-weight="bold" fill="#854d0e" text-anchor="middle">Hasil Pembacaan:</text>
+        <line x1="10" y1="32" x2="125" y2="32" stroke="#fef08a"/>
+        <text x="67.5" y="52" font-family="sans-serif" font-size="14" font-weight="extrabold" fill="#b45309" text-anchor="middle">600 gram</text>
+        <text x="67.5" y="70" font-family="sans-serif" font-size="9" fill="#713f12" text-anchor="middle">setara dengan</text>
+        <text x="67.5" y="88" font-family="sans-serif" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">6 ons</text>
       </g>
     </svg>
   `)}`
@@ -456,6 +654,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
+    imageUrl: SVG_ICONS.alatUkurPanjang,
+    imageCaption: 'Meteran Pita untuk Penjahit Pakaian',
     question: 'Seorang penjahit ingin mengukur lingkar pinggang dan lingkar dada siswa untuk membuat seragam sekolah. Alat ukur panjang yang paling tepat digunakan karena sifatnya yang lentur dan mudah ditekuk adalah ...',
     options: [
       'Penggaris kayu panjang kaku',
@@ -467,7 +667,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: 'Meteran pita (meteran kain/jahit) terbuat dari bahan pita lentur sehingga sangat cocok digunakan untuk mengukur kain dan bagian tubuh yang melengkung seperti lingkar pinggang.'
   },
 
-  // Soal 4: Hubungan Satuan Meter ke Sentimeter (L1 - Mudah)
+  // Soal 4: Alat Ukur Meteran Rol Besar untuk Lapangan / Tanah (L1 - Mudah) [ALAT UKUR PANJANG]
   {
     id: 'pg-4',
     originalNumber: 4,
@@ -476,24 +676,24 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_PANJANG,
-    indikator: 'Siswa dapat menentukan hubungan kesetaraan antara satuan meter (m) dan sentimeter (cm).',
+    indikator: 'Siswa dapat menentukan alat ukur panjang yang tepat untuk mengukur bidang tanah atau lapangan yang sangat luas.',
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
-    imageUrl: SVG_ICONS.tanggaSatuanPanjang,
-    imageCaption: 'Tangga Konversi Satuan Panjang',
-    question: 'Berdasarkan tangga konversi satuan panjang baku, 1 meter (m) setara dengan berapa sentimeter (cm)?',
+    imageUrl: SVG_ICONS.alatUkurPanjang,
+    imageCaption: 'Meteran Rol Besar (Meteran Tanah/Lapangan)',
+    question: 'Guru olahraga ingin mengukur panjang lapangan sepak bola dan lintasan lari di halaman sekolah yang mencapai puluhan meter. Alat ukur panjang baku yang paling tepat digunakan karena memiliki pita ukur sangat panjang (20 hingga 50 meter) adalah ...',
     options: [
-      '10 cm',
-      '100 cm',
-      '1.000 cm',
-      '10.000 cm'
+      'Meteran rol besar (meteran tanah / meteran gulung panjang)',
+      'Penggaris plastik kecil 30 cm',
+      'Jangka sorong',
+      'Meteran pita penjahit 1,5 meter'
     ],
-    correctAnswer: 1,
-    explanation: 'Dari meter (m) ke sentimeter (cm) turun 2 tangga (dikali 10 × 10 = 100). Jadi, 1 m = 100 cm.'
+    correctAnswer: 0,
+    explanation: 'Meteran rol besar (meteran tanah) memiliki pita ukur yang sangat panjang (mencapai 20 m sampai 50 meter) sehingga sangat tepat dan efisien untuk mengukur tanah, halaman, atau lapangan olahraga.'
   },
 
-  // Soal 5: Konversi Panjang Bilangan Bulat Meter ke Sentimeter (L1 - Mudah)
+  // Soal 5: Posisi Pengamatan Mata Saat Mengukur dengan Mistar (L1 - Mudah) [ALAT UKUR PANJANG]
   {
     id: 'pg-5',
     originalNumber: 5,
@@ -502,22 +702,24 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_PANJANG,
-    indikator: 'Siswa dapat mengonversi ukuran panjang meter ke sentimeter pada bilangan bulat sederhana.',
+    indikator: 'Disajikan ilustrasi posisi mata, siswa dapat menentukan sudut pandang yang tepat saat membaca skala pengukuran panjang.',
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
-    question: 'Siti membeli pita hias berwarna merah sepanjang 3 meter untuk menghias kado ulang tahun. Jika panjang pita tersebut dinyatakan dalam satuan sentimeter (cm), maka panjangnya adalah ... cm.',
+    imageUrl: SVG_ICONS.posisiMataUkur,
+    imageCaption: 'Posisi Mata Pengamat yang Tepat saat Membaca Mistar',
+    question: 'Perhatikan gambar posisi mata pengamat di atas! Agar hasil pembacaan panjang benda pada penggaris akurat dan tidak salah baca (menghindari kesalahan paralaks), posisi mata pengamat yang BENAR adalah ...',
     options: [
-      '30 cm',
-      '300 cm',
-      '3.000 cm',
-      '30.000 cm'
+      'Posisi A (melihat miring dari arah kiri)',
+      'Posisi B (tegak lurus tepat di atas garis skala yang dibaca)',
+      'Posisi C (melihat miring dari arah kanan)',
+      'Melihat sambil memiringkan ujung penggaris dari bawah'
     ],
     correctAnswer: 1,
-    explanation: 'Karena 1 m = 100 cm, maka 3 m = 3 × 100 cm = 300 cm.'
+    explanation: 'Saat membaca skala penggaris, mata pengamat harus berada pada Posisi B, yaitu tegak lurus tepat di atas garis skala yang diukur agar tidak terjadi pergeseran sudut pandang (kesalahan paralaks).'
   },
 
-  // Soal 6: Konversi Sentimeter ke Meter (L1 - Mudah)
+  // Soal 6: Jangka Sorong untuk Benda Bundar dan Ketebalan Tipis (L1 - Mudah) [ALAT UKUR PANJANG]
   {
     id: 'pg-6',
     originalNumber: 6,
@@ -526,22 +728,24 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_PANJANG,
-    indikator: 'Siswa dapat mengonversi ukuran panjang dari sentimeter (cm) ke meter (m).',
+    indikator: 'Disajikan gambar jangka sorong, siswa dapat mengidentifikasi alat ukur panjang khusus untuk benda kecil dan bundar.',
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
-    question: 'Panjang papan tulis di ruang kelas III adalah 200 sentimeter. Panjang papan tulis tersebut setara dengan ... meter.',
+    imageUrl: SVG_ICONS.jangkaSorong,
+    imageCaption: 'Jangka Sorong untuk Menjepit Benda Bundar & Kecil',
+    question: 'Perhatikan gambar alat ukur di atas! Alat ukur panjang yang memiliki rahang penjepit dan sangat tepat digunakan untuk mengukur ketebalan uang koin logam atau diameter kelereng dengan ketelitian tinggi adalah ...',
     options: [
-      '2 meter',
-      '20 meter',
-      '200 meter',
-      '0,2 meter'
+      'Meteran pita jahit',
+      'Jangka sorong (sketmat)',
+      'Meteran gulung tukang kayu',
+      'Busur derajat'
     ],
-    correctAnswer: 0,
-    explanation: 'Karena 100 cm = 1 m, maka 200 cm = 200 : 100 = 2 meter.'
+    correctAnswer: 1,
+    explanation: 'Jangka sorong (sketmat) adalah alat ukur panjang dengan rahang geser yang dirancang khusus untuk mengukur diameter luar kelereng, diameter dalam pipa, dan ketebalan benda tipis seperti koin dengan sangat presisi.'
   },
 
-  // Soal 7: Alat Ukur Pertukangan / Bangunan (L1 - Mudah)
+  // Soal 7: Alat Ukur Pertukangan / Bangunan (L1 - Mudah) [ALAT UKUR PANJANG]
   {
     id: 'pg-7',
     originalNumber: 7,
@@ -554,6 +758,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
+    imageUrl: SVG_ICONS.alatUkurPanjang,
+    imageCaption: 'Meteran Rol Saku untuk Pertukangan',
     question: 'Pak Tukang ingin mengukur lebar pintu dan tinggi jendela saat merenovasi ruang kelas. Alat ukur panjang terbuat dari pita baja gulung yang tepat digunakan oleh tukang bangunan adalah ...',
     options: [
       'Meteran rol saku (meteran saku)',
@@ -578,6 +784,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
+    imageUrl: SVG_ICONS.tanggaSatuanPanjang,
+    imageCaption: 'Tangga Konversi Satuan Panjang',
     question: 'Jarak antara rumah Made ke sekolah adalah 1 kilometer (km). Berapakah jarak tersebut jika dinyatakan dalam satuan meter (m)?',
     options: [
       '10 meter',
@@ -613,7 +821,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: '2 meter = 2 × 100 cm = 200 cm. Panjang total = 200 cm + 45 cm = 245 cm.'
   },
 
-  // Soal 10: Mengubah Sentimeter Menjadi Bentuk Meter dan Sentimeter (L2 - Sedang)
+  // Soal 10: Pengukuran Benda yang Tidak Dimulai dari Angka Nol (L2 - Sedang) [ALAT UKUR PANJANG]
   {
     id: 'pg-10',
     originalNumber: 10,
@@ -622,19 +830,21 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_PANJANG,
-    indikator: 'Siswa dapat menguraikan ukuran dalam sentimeter menjadi gabungan meter dan sentimeter.',
+    indikator: 'Disajikan gambar pengukuran benda dengan penggaris patah (tidak mulai dari 0), siswa dapat menghitung panjang benda sebenarnya.',
     cognitiveLevel: 'L2',
     difficulty: 'Sedang',
     scoreWeight: 1,
-    question: 'Hasil pengukuran panjang meja belajar Edo adalah 185 sentimeter. Ukuran panjang meja tersebut sama dengan ...',
+    imageUrl: SVG_ICONS.penggarisTidakNol,
+    imageCaption: 'Pengukuran Penghapus Karet pada Skala 3 cm s.d. 8 cm',
+    question: 'Perhatikan gambar pengukuran penghapus di atas! Wayan menggunakan penggaris yang patah ujung awalnya untuk mengukur sebuah penghapus karet. Pangkal penghapus diletakkan tepat di angka 3 cm dan ujung penghapus berada di angka 8 cm. Berapakah panjang penghapus karet tersebut sebenarnya?',
     options: [
-      '1 m lebih 85 cm',
-      '18 m lebih 5 cm',
-      '10 m lebih 85 cm',
-      '1 m lebih 8 cm'
+      '8 cm',
+      '5 cm',
+      '3 cm',
+      '11 cm'
     ],
-    correctAnswer: 0,
-    explanation: '185 cm = 100 cm + 85 cm. Karena 100 cm = 1 m, maka 185 cm = 1 m lebih 85 cm.'
+    correctAnswer: 1,
+    explanation: 'Karena pengukuran tidak dimulai dari angka 0, panjang benda dihitung dari selisih angka akhir dikurangi angka awal: 8 cm - 3 cm = 5 cm. Jadi, panjang penghapus karet tersebut adalah 5 cm.'
   },
 
   // Soal 11: Penjumlahan Panjang dengan Konversi Satuan (L2 - Sedang)
@@ -661,7 +871,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: '1 m 20 cm = 120 cm. Panjang total = 120 cm + 80 cm = 200 cm. Karena 200 cm = 2 m, maka panjang total pita adalah 2 meter.'
   },
 
-  // Soal 12: Pengurangan / Sisa Panjang Benda dalam Cerita (L2 - Sedang)
+  // Soal 12: Pasangan Benda dan Alat Ukur Panjang yang Tepat (L2 - Sedang) [ALAT UKUR PANJANG]
   {
     id: 'pg-12',
     originalNumber: 12,
@@ -670,19 +880,21 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_PANJANG,
-    indikator: 'Disajikan masalah pemotongan benda, siswa dapat menghitung sisa panjang dalam satuan sentimeter.',
+    indikator: 'Siswa dapat menganalisis kesesuaian antara bentuk benda dan alat ukur panjang baku yang paling tepat.',
     cognitiveLevel: 'L2',
     difficulty: 'Sedang',
     scoreWeight: 1,
-    question: 'Udin mempunyai sebatang bambu sepanjang 3 meter (300 cm). Bambu tersebut dipotong sepanjang 120 cm untuk membuat tiang bendera kecil. Berapakah panjang sisa bambu Udin yang belum terpakai?',
+    imageUrl: SVG_ICONS.alatUkurPanjang,
+    imageCaption: 'Kesesuaian Karakteristik Benda dan Alat Ukur Panjang',
+    question: 'Perhatikan pasangan benda dan alat ukur panjang berikut! Pasangan manakah yang PALING SESUAI dan tepat digunakan dalam kehidupan sehari-hari?',
     options: [
-      '180 cm',
-      '150 cm',
-      '220 cm',
-      '80 cm'
+      'Mengukur lingkar kepala adik bayi — Menggunakan meteran baja rol tukang yang kaku',
+      'Mengukur tebal keping uang logam koin — Menggunakan meteran kain jahit',
+      'Mengukur lingkar leher baju seragam — Menggunakan meteran pita kain yang lentur',
+      'Mengukur panjang buku gambar siswa — Menggunakan meteran rol tanah 50 meter'
     ],
-    correctAnswer: 0,
-    explanation: 'Panjang awal bambu = 3 m = 300 cm. Panjang sisa = 300 cm - 120 cm = 180 cm.'
+    correctAnswer: 2,
+    explanation: 'Lingkar leher atau lingkar tubuh manusia memiliki bentuk melengkung, sehingga alat ukur yang paling cocok adalah meteran pita kain yang fleksibel dan lentur mengikuti lekuk tubuh.'
   },
 
   // Soal 13: Jarak Tempuh Kilometer dan Meter (L2 - Sedang)
@@ -761,7 +973,7 @@ export const INITIAL_QUESTIONS: Question[] = [
   // SUB-TOPIK 2: PENGUKURAN BERAT (PILIHAN GANDA: SOAL 16 s.d. 30)
   // =========================================================================
 
-  // Soal 16: Alat Ukur Baku untuk Berat Badan (L1 - Mudah)
+  // Soal 16: Alat Ukur Baku untuk Berat Badan (L1 - Mudah) [ALAT UKUR BERAT]
   {
     id: 'pg-16',
     originalNumber: 16,
@@ -787,7 +999,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: 'Timbangan badan (baik jarum injak maupun digital) dirancang khusus untuk mengukur berat tubuh manusia dengan satuan kilogram (kg).'
   },
 
-  // Soal 17: Hubungan Kilogram ke Gram (L1 - Mudah)
+  // Soal 17: Timbangan Gantung Posyandu (Dacin) untuk Balita (L1 - Mudah) [ALAT UKUR BERAT]
   {
     id: 'pg-17',
     originalNumber: 17,
@@ -796,24 +1008,24 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_BERAT,
-    indikator: 'Siswa dapat menentukan hubungan kesetaraan antara satuan kilogram (kg) dan gram (g).',
+    indikator: 'Disajikan ilustrasi timbangan dacin, siswa dapat mengidentifikasi alat ukur berat gantung untuk balita di posyandu.',
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
-    imageUrl: SVG_ICONS.tanggaSatuanBerat,
-    imageCaption: 'Tangga Satuan Baku Berat',
-    question: '1 kilogram (kg) beras setara dengan berapa gram (g)?',
+    imageUrl: SVG_ICONS.timbanganDacinPosyandu,
+    imageCaption: 'Timbangan Dacin Gantung untuk Balita di Posyandu',
+    question: 'Perhatikan gambar alat penimbangan di atas! Saat kegiatan Posyandu bulanan di balai desa, kader kesehatan menimbang berat badan balita menggunakan timbangan gantung berbatang logam dengan kain ayunan. Alat ukur berat tersebut dikenal dengan nama ...',
     options: [
-      '10 gram',
-      '100 gram',
-      '1.000 gram',
-      '10.000 gram'
+      'Timbangan dacin (timbangan gantung Posyandu)',
+      'Neraca pegas laboratorium',
+      'Timbangan duduk lantai beras',
+      'Meteran pita kain'
     ],
-    correctAnswer: 2,
-    explanation: '1 kilogram (kg) = 1.000 gram (g). Dari kg ke gram turun 3 anak tangga (× 10 × 10 × 10 = 1.000).'
+    correctAnswer: 0,
+    explanation: 'Timbangan dacin adalah timbangan gantung berlengan logam dengan bandul geser yang umum digunakan di Posyandu untuk menimbang berat badan bayi dan balita dalam sarung ayunan.'
   },
 
-  // Soal 18: Hubungan Kilogram ke Ons (Hektogram) (L1 - Mudah)
+  // Soal 18: Neraca Dua Lengan untuk Toko Emas (L1 - Mudah) [ALAT UKUR BERAT]
   {
     id: 'pg-18',
     originalNumber: 18,
@@ -822,22 +1034,24 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_BERAT,
-    indikator: 'Siswa dapat menentukan kesetaraan antara satuan kilogram (kg) dan ons (hg).',
+    indikator: 'Siswa dapat menentukan alat ukur berat yang memiliki ketelitian tinggi untuk menimbang perhiasan emas.',
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
-    question: '1 kilogram (kg) sama dengan berapa ons?',
+    imageUrl: SVG_ICONS.alatUkurBerat,
+    imageCaption: 'Neraca Halus Dua Lengan',
+    question: 'Ibu mengunjungi toko emas untuk membeli sebuah cincin. Alat penimbang dengan dua piringan yang memiliki ketelitian sangat tinggi dan cocok digunakan untuk menimbang emas, perak, atau obat di apotek adalah ...',
     options: [
-      '5 ons',
-      '10 ons',
-      '100 ons',
-      '1.000 ons'
+      'Neraca dua lengan (neraca halus)',
+      'Timbangan injak badan',
+      'Timbangan beras karungan',
+      'Timbangan gantung dacin'
     ],
-    correctAnswer: 1,
-    explanation: '1 kilogram (kg) setara dengan 10 ons (hektogram). Satuan 1 hg biasa disebut 1 ons di Indonesia.'
+    correctAnswer: 0,
+    explanation: 'Neraca dua lengan (neraca halus) digunakan khusus untuk menimbang benda-benda berharga kecil seperti emas, perak, dan serbuk obat di apotek karena mempunyai tingkat kepekaan dan ketelitian yang sangat tinggi dalam satuan gram.'
   },
 
-  // Soal 19: Hubungan Ons ke Gram (L1 - Mudah)
+  // Soal 19: Memastikan Posisi Jarum Timbangan ke Angka Nol (L1 - Mudah) [ALAT UKUR BERAT]
   {
     id: 'pg-19',
     originalNumber: 19,
@@ -846,22 +1060,24 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_BERAT,
-    indikator: 'Siswa dapat menentukan kesetaraan antara satuan 1 ons dan gram.',
+    indikator: 'Siswa dapat menjelaskan prosedur yang benar sebelum menimbang bahan pada timbangan jarum.',
     cognitiveLevel: 'L1',
     difficulty: 'Mudah',
     scoreWeight: 1,
-    question: '1 ons setara dengan berapa gram?',
+    imageUrl: SVG_ICONS.alatUkurBerat,
+    imageCaption: 'Timbangan Dapur Jarum untuk Menimbang Bahan Makanan',
+    question: 'Sebelum meletakkan tepung terigu atau gula ke atas wadah timbangan dapur berjarum, tindakan awal yang WAJIB dipastikan agar hasil penimbangan tepat dan akurat adalah ...',
     options: [
-      '10 gram',
-      '100 gram',
-      '500 gram',
-      '1.000 gram'
+      'Memastikan jarum penunjuk timbangan tepat menunjuk ke angka 0 (nol)',
+      'Memutar jarum timbangan ke angka 500 gram',
+      'Meletakkan anak timbangan besi di atas meja',
+      'Memiringkan badan timbangan ke kiri'
     ],
-    correctAnswer: 1,
-    explanation: 'Karena 1 kg = 10 ons dan 1 kg = 1.000 gram, maka 1 ons = 1.000 : 10 = 100 gram.'
+    correctAnswer: 0,
+    explanation: 'Sebelum digunakan, jarum timbangan harus tepat berada pada posisi angka 0 (nol). Hal ini dilakukan agar berat benda dihitung secara murni dari titik awal tanpa kesalahan ukuran.'
   },
 
-  // Soal 20: Membaca Hasil Timbangan Jarum Buah (L1 - Mudah)
+  // Soal 20: Membaca Hasil Timbangan Jarum Buah (L1 - Mudah) [ALAT UKUR BERAT]
   {
     id: 'pg-20',
     originalNumber: 20,
@@ -935,7 +1151,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: '3.000 gram = 3.000 : 1.000 = 3 kilogram (kg).'
   },
 
-  // Soal 23: Konversi Campuran kg dan gram ke Gram (L2 - Sedang)
+  // Soal 23: Membaca Timbangan Dapur Jarum 600 gram dan Mengonversi ke Ons (L2 - Sedang) [ALAT UKUR BERAT]
   {
     id: 'pg-23',
     originalNumber: 23,
@@ -944,22 +1160,24 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_BERAT,
-    indikator: 'Disajikan ukuran berat campuran kg dan gram, siswa dapat mengonversi seluruhnya ke gram.',
+    indikator: 'Disajikan gambar timbangan kue berjarum yang menunjuk 600 gram, siswa dapat membaca dan mengonversinya ke dalam satuan ons.',
     cognitiveLevel: 'L2',
     difficulty: 'Sedang',
     scoreWeight: 1,
-    question: 'Ibu membeli sekarung kecil gula pasir seberat 2 kg lebih 250 gram (2 kg 250 g). Berapakah berat seluruh gula pasir tersebut jika dinyatakan dalam satuan gram?',
+    imageUrl: SVG_ICONS.timbanganKueJarumDetail,
+    imageCaption: 'Timbangan Kue Dapur Menimbang Tepung Terigu',
+    question: 'Perhatikan gambar timbangan dapur yang menimbang semangkuk tepung terigu di atas! Jarum timbangan tepat menunjuk ke angka 600 gram pada skala putar. Berapakah berat tepung terigu tersebut jika dinyatakan dalam satuan ons?',
     options: [
-      '2.250 gram',
-      '2.025 gram',
-      '450 gram',
-      '22.500 gram'
+      '6 ons',
+      '60 ons',
+      '0,6 ons',
+      '600 ons'
     ],
     correctAnswer: 0,
-    explanation: '2 kg = 2 × 1.000 g = 2.000 g. Total berat = 2.000 g + 250 g = 2.250 gram.'
+    explanation: 'Hasil penunjukan jarum timbangan adalah 600 gram. Karena 1 ons = 100 gram, maka 600 gram = 600 : 100 = 6 ons.'
   },
 
-  // Soal 24: Mengubah Gram Menjadi Bentuk Kilogram dan Gram (L2 - Sedang)
+  // Soal 24: Membaca Timbangan Bebek Pasar dengan Anak Timbangan (L2 - Sedang) [ALAT UKUR BERAT]
   {
     id: 'pg-24',
     originalNumber: 24,
@@ -968,19 +1186,21 @@ export const INITIAL_QUESTIONS: Question[] = [
     elemen: ELEMEN_PENGUKURAN,
     capaianPembelajaran: CP_PENGUKURAN,
     tujuanPembelajaran: TP_BERAT,
-    indikator: 'Siswa dapat menguraikan nilai ribuan gram menjadi bentuk kilogram dan sisa gram.',
+    indikator: 'Disajikan gambar timbangan bebek yang seimbang, siswa dapat menghitung berat total buah dari kombinasi anak timbangan.',
     cognitiveLevel: 'L2',
     difficulty: 'Sedang',
     scoreWeight: 1,
-    question: 'Berat sekantong buah mangga harum manis adalah 3.600 gram. Berat mangga tersebut sama dengan ...',
+    imageUrl: SVG_ICONS.timbanganPasarBebekAnak,
+    imageCaption: 'Timbangan Bebek Pasar Seimbang dengan Anak Timbangan',
+    question: 'Perhatikan gambar timbangan pasar (timbangan bebek) di atas! Di piringan sebelah kiri terdapat buah pepaya. Di piringan sebelah kanan diletakkan 1 buah anak timbangan 1 kg dan 1 buah anak timbangan 500 gram hingga posisi timbangan SEIMBANG. Berapakah berat buah pepaya tersebut dalam satuan gram?',
     options: [
-      '3 kg lebih 600 gram',
-      '36 kg lebih 0 gram',
-      '3 kg lebih 60 gram',
-      '30 kg lebih 600 gram'
+      '1.000 gram',
+      '1.500 gram',
+      '2.000 gram',
+      '2.500 gram'
     ],
-    correctAnswer: 0,
-    explanation: '3.600 gram = 3.000 gram + 600 gram = 3 kg lebih 600 gram.'
+    correctAnswer: 1,
+    explanation: 'Karena timbangan dalam posisi seimbang, berat pepaya sama dengan jumlah anak timbangan di piringan kanan: 1 kg (1.000 gram) + 500 gram = 1.500 gram.'
   },
 
   // Soal 25: Perkalian & Penjumlahan Berat Beberapa Benda Bahan Kue (L2 - Sedang)
@@ -1103,7 +1323,7 @@ export const INITIAL_QUESTIONS: Question[] = [
     explanation: 'Mari kita konversikan seluruh barang ke satuan gram:\n• Beras: 2 kg = 2.000 g\n• Gula pasir = 1.500 g\n• Telur: 10 ons = 10 × 100 g = 1.000 g\n• Daging ayam = 800 g\nTotal berat belanjaan = 2.000 + 1.500 + 1.000 + 800 = 5.300 gram (5 kg 300 gram).\nKarena 5.300 gram > 5.000 gram, tas belanja melebihi daya tampung sebesar 300 gram sehingga tidak aman.'
   },
 
-  // Soal 30: Penyeimbangan Anak Timbangan pada Neraca Bebek (L3 - Sukar HOTS)
+  // Soal 30: Penyeimbangan Anak Timbangan pada Neraca Bebek (L3 - Sukar HOTS) [ALAT UKUR BERAT]
   {
     id: 'pg-30',
     originalNumber: 30,
@@ -1116,6 +1336,8 @@ export const INITIAL_QUESTIONS: Question[] = [
     cognitiveLevel: 'L3',
     difficulty: 'Sukar',
     scoreWeight: 1,
+    imageUrl: SVG_ICONS.timbanganPasarBebekAnak,
+    imageCaption: 'Penyeimbangan Beban pada Timbangan Pasar (Timbangan Bebek)',
     question: 'Pada sebuah timbangan pasar dua lengan (timbangan bebek), di piringan sebelah kiri diletakkan sekarung beras seberat 3 kg (3.000 gram). Di piringan sebelah kanan baru diletakkan:\n• 1 buah anak timbangan 1 kg\n• 2 buah anak timbangan 500 gram\nBerapa gram anak timbangan lagi yang harus ditambahkan ke piringan kanan agar timbangan tersebut berada dalam posisi SEIMBANG?',
     options: [
       '500 gram',
